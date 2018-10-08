@@ -26,16 +26,10 @@
         android:layout_below="@id/header"
         android:orientation="vertical">
 
-        <include layout="@layout/item_doa" />
-
-        <include layout="@layout/item_doa" />
-
-        <include layout="@layout/item_doa" />
-
-        <include layout="@layout/item_doa" />
-
-        <include layout="@layout/item_doa" />
-
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/lst_doa"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
     </LinearLayout>
 
 </RelativeLayout>

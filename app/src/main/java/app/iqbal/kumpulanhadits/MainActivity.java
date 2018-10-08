@@ -7,8 +7,14 @@ import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.LinearLayout;
 
+import java.util.ArrayList;
+import java.util.List;
+
+import app.iqbal.kumpulanhadits.model.Doa;
+
 public class MainActivity extends AppCompatActivity {
     private LinearLayout lytMain;
+    private List<Doa> doas = new ArrayList<>();
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
@@ -26,5 +32,9 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(moveIntent);
             }
         });
+    }
+
+    private void doaCollections() {
+        doas.add(new Doa("Doa Masuk Masjid", "Arti doa masuk masjid", "googling"));
     }
 }
