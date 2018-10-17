@@ -13,28 +13,34 @@ import java.util.List;
 import app.iqbal.kumpulanhadits.model.Doa;
 
 public class MainActivity extends AppCompatActivity {
-    private LinearLayout lytMain;
+    private LinearLayout doaMain;
     private List<Doa> doas = new ArrayList<>();
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        lytMain = (LinearLayout) findViewById(R.id.lyt_main);
+        doaMain = (LinearLayout) findViewById(R.id.doa_main);
         clickMe();
     }
 
     private void clickMe() {
-        lytMain.setOnClickListener(new View.OnClickListener() {
+        doaMain.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent moveIntent = new Intent(MainActivity.this, DetailActivity.class);
                 startActivity(moveIntent);
+                doaCollections();
             }
         });
     }
 
     private void doaCollections() {
-        doas.add(new Doa("Doa Masuk Masjid", "Arti doa masuk masjid", "googling"));
+        doas.add(new Doa("test1", "tost1", "waeweawewa"));
+        doas.add(new Doa("test2", "tost2", "sjdahjksdj"));
+        doas.add(new Doa("test3", "tost3", "dgsdqgGfaf"));
+        doas.add(new Doa("test4", "tost4", "sfhdafeehh"));
+        doas.add(new Doa("test5", "tost5", "adgdfndQRA"));
+
     }
 }
