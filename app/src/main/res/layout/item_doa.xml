@@ -2,16 +2,15 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="70dp"
-    android:orientation="horizontal"
-    android:id="@+id/doa_main">
+    android:orientation="horizontal">
 
     <ImageView
         android:layout_width="0dp"
         android:layout_height="match_parent"
         android:layout_weight="1"
+        android:contentDescription="basic_logo"
         android:padding="10dp"
-        android:src="@drawable/ic_book_black_24dp"
-        android:contentDescription="basic_logo" />
+        android:src="@drawable/ic_book_black_24dp" />
 
     <LinearLayout
         android:layout_width="0dp"

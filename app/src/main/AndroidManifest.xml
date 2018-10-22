@@ -24,6 +24,7 @@
             android:name=".MainActivity" />
         <activity
             android:theme="@style/AppTheme"
-            android:name=".DetailActivity" />
+            android:name=".DetailActivity"
+            android:parentActivityName=".MainActivity"/>
     </application>
 </manifest>

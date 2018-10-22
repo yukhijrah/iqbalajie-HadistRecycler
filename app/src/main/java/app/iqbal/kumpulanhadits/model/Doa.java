@@ -1,12 +1,14 @@
 package app.iqbal.kumpulanhadits.model;
 
-public class Doa {
+import java.io.Serializable;
+
+public class Doa implements Serializable {
 
     private String nama;
     private String surah;
     private String arti;
 
-    public Doa(String nama, String arti, String surah) { //constructor
+    public Doa(String nama, String surah, String arti) { //constructor
         this.nama = nama;
         this.surah = surah;
         this.arti = arti;
@@ -22,17 +24,5 @@ public class Doa {
 
     public String getArti() {
         return arti;
-    }
-
-    public void setNama(String nama) {
-        this.nama = nama;
-    }
-
-    public void setSurah(String surah) {
-        this.surah = surah;
-    }
-
-    public void setArti(String arti) {
-        this.arti = arti;
     }
 }
